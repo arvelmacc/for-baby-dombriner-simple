@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>100 Reasons Why I Love You — For Baby Bri</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-page">
+<header>
+  <nav>
+    <a class="logo" href="/">For Baby 💗</a>
+    <div class="links">
+      <a href="/reasons">100 Reasons</a>
+      <a href="/forbabybri">ForBabyBri</a>
+    </div>
+  </nav>
+</header>
+
+<main class="content">
+  <h1>100 Reasons Why I Love You</h1>
+  <ul class="reasons">
+    <li>💖 You make the ordinary days feel magical.</li>
+    <li>💖 You laugh with your whole heart.</li>
+    <li>💖 You trust me enough to be your soft place.</li>
+    <li>💖 You’re strong, even when you don’t see it.</li>
+    <li>💖 You remind me what gentle love means.</li>
+    <li>💖 You never stop trying to heal and grow.</li>
+    <li>💖 You are home to me.</li>
+    <li>💖 You still believe in love, even after everything.</li>
+    <li>💖 You make me want to be the best version of myself.</li>
+    <li>💖 You let me love you freely, and that’s everything.</li>
+    <!-- continue up to 100 -->
+  </ul>
+</main>
+
+<footer>From Lebi — for Baby Bri 💖</footer>
+<div id="hearts"></div><div id="sparkles"></div>
+<script>
+document.addEventListener('DOMContentLoaded',()=>document.body.classList.add('loaded'));
+const hearts=document.getElementById('hearts');
+for(let i=0;i<20;i++){
+  const h=document.createElement('div');
+  h.className='heart';
+  h.style.left=Math.random()*100+'vw';
+  h.style.animationDuration=6+Math.random()*6+'s';
+  hearts.appendChild(h);
+}
+</script>
+</body>
+</html>

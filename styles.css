@@ -1,0 +1,44 @@
+html,body{
+  margin:0;padding:0;
+  font-family:'Quicksand',sans-serif;
+  background:linear-gradient(180deg,#ffe6f0 0%,#ffd6eb 40%,#f7d9ff 100%);
+  color:#4d3a47;min-height:100%;
+  overflow-x:hidden;
+}
+.fade-page{opacity:0;transition:opacity 1.5s ease;}
+.fade-page.loaded{opacity:1;}
+header nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1rem 2rem;background:rgba(255,255,255,0.4);
+  backdrop-filter:blur(8px);position:sticky;top:0;
+}
+.logo{font-family:'Great Vibes',cursive;font-size:1.8rem;color:#ff7ab6;text-decoration:none;}
+.links a{margin-left:1rem;text-decoration:none;color:#4d3a47;transition:0.3s;}
+.links a:hover{color:#ff8fc0;text-shadow:0 0 8px #ffcce4;}
+.content{padding:2rem 1rem;max-width:700px;margin:auto;text-align:center;}
+h1{font-family:'Great Vibes',cursive;font-size:2.5rem;color:#ff69b4;}
+.subtitle{color:#7a5a6a;}
+.letter p{margin:1rem 0;line-height:1.6;}
+.sign{margin-top:2rem;font-weight:600;}
+footer{text-align:center;padding:1rem 0;color:#7a5a6a;font-size:0.9rem;}
+.reasons{list-style:none;padding:0;}
+.reasons li{margin:0.6rem 0;animation:fadeUp 1s ease;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+.heart{
+  position:fixed;bottom:-10px;width:20px;height:20px;
+  background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ff80b0" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 3.99 4 6.5 4c1.74 0 3.41 1.01 4.13 2.44C11.09 5.01 12.76 4 14.5 4 17 4 19 6 19 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') center/contain no-repeat;
+  animation:floatUp linear infinite;
+}
+@keyframes floatUp{
+  from{transform:translateY(0) scale(1);opacity:.8;}
+  to{transform:translateY(-110vh) scale(.7);opacity:0;}
+}
+.sparkle{
+  position:fixed;bottom:-10px;width:5px;height:5px;
+  background:radial-gradient(circle,#fff8,#fff0);
+  border-radius:50%;animation:twinkle linear infinite;
+}
+@keyframes twinkle{
+  from{transform:translateY(0) scale(.8);opacity:.7;}
+  to{transform:translateY(-100vh) scale(1.2);opacity:0;}
+}

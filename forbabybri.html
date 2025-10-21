@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ForBabyBri — From Lebi</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-page">
+<header>
+  <nav>
+    <a class="logo" href="/">For Baby 💗</a>
+    <div class="links">
+      <a href="/reasons">100 Reasons</a>
+      <a href="/forbabybri">ForBabyBri</a>
+    </div>
+  </nav>
+</header>
+
+<main class="content">
+  <h1>ForBabyBri</h1>
+  <p>This page is just for the small things that don’t always need pictures —  
+  soft words, tiny reminders, and pieces of how much you mean to me.</p>
+
+  <p>💌 You are enough.  
+  💌 You are loved exactly as you are.  
+  💌 You are safe here, always.</p>
+
+  <p>Whenever you feel alone, remember: I built this to hold you,  
+  even when I can’t be there in person.</p>
+
+  <p class="sign">From Lebi — always, for Baby Bri 💕</p>
+</main>
+
+<footer>From Lebi — for Baby Bri 💖</footer>
+<div id="hearts"></div><div id="sparkles"></div>
+<script>
+document.addEventListener('DOMContentLoaded',()=>document.body.classList.add('loaded'));
+const hearts=document.getElementById('hearts');
+for(let i=0;i<25;i++){
+  const h=document.createElement('div');
+  h.className='heart';
+  h.style.left=Math.random()*100+'vw';
+  h.style.animationDuration=6+Math.random()*6+'s';
+  hearts.appendChild(h);
+}
+</script>
+</body>
+</html>
